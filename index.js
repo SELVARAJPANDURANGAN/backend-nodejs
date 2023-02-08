@@ -7,12 +7,18 @@ import {MongoClient} from "mongodb";
 import {bookRouter} from "./routes/book.js"
 import bcrypt from "bcrypt"
 import {usersRouter} from "./routes/user.js"
+import cors from "cors"
 
 dotenv.config()
 
 console.log(process.env.MONGO_URL)
 
 const app = express(); 
+
+
+
+ 
+app.use(cors())
 
 
 
