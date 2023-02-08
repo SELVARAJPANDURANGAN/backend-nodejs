@@ -114,7 +114,7 @@ async function createConnection(){
   console.log("mongo is connected")
   return client;
 }
-
+// test
 export const client = await createConnection();
  app.use(express.json());
 
